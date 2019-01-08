@@ -1,9 +1,9 @@
 class MusicLibraryController 
   attr_accessor :path 
   
-  def initialize(path = nil)
+  def initialize(path = ".spec/fixtures/mp3s")
     
-    if path != nil 
+    MusicImporter.new(path).import  
       
     end 
     
