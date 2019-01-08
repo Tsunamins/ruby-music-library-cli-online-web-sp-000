@@ -11,7 +11,13 @@ class MusicLibraryController
   
   def call 
     puts "Welcome to your music library!"
-    user_input.
+    user_input = gets
+    while user_input != exit 
+      user_input = gets 
+    end 
+      
+     
+    
   end
   
   
